@@ -775,7 +775,7 @@ html {
 .geista-container {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
   padding: 30px 24px;
-  margin: 50px 20px;
+  /* margin: 50px 20px; */
   border-radius: 10px;
 }
 .second-geista-container {
@@ -873,16 +873,18 @@ html {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  max-width: 420px;
 }
 
 .card-images-div {
   background-color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   transition: all 0.2s linear;
   position: relative;
+  margin: 0px 5px;
 }
 
 .card-images-div:hover {
@@ -928,7 +930,7 @@ html {
 }
 
 .card-images-div img {
-  width: 200px;
+  max-width: 200px;
   height: 120px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1209,11 +1211,15 @@ footer {
     display: block;
   }
   .develop-demo_window {
-    margin-bottom: 250px;
+    margin-bottom: 320px;
   }
 
   .develop-demo-items {
     margin-left: 0;
+    text-align: center;
+  }
+  .preview-icon-link-div {
+    text-align: left;
   }
 
   .status {
@@ -1318,4 +1324,17 @@ footer {
   .tastimonial-brands {
     grid-template-columns: auto;
   }
+
+  .footer-bottom-logo {
+    text-align: center;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-light-dark-btn,
+  .footer-bottom-btn {
+    margin: 10px auto;
+  }
 }
+
+/* // Responsive section */
