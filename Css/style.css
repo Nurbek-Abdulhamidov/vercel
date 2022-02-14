@@ -19,7 +19,19 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.pointer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.2s;
+  z-index: 10000;
+}
 .container-second-section {
   max-width: 1048px;
   margin: 0 auto;
@@ -133,6 +145,10 @@ html {
   text-align: center;
   line-height: 160px;
   letter-spacing: -5px;
+  background: linear-gradient(120deg, #3cff01, #f81ce5,#fff500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 9s linear infinite;
 }
 
 .main-section__button {

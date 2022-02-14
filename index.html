@@ -10,7 +10,7 @@
     <title>Vercel</title>
   </head>
   <body>
-
+    <div class="pointer"></div>
     <!-- <div class="wrapper"> -->
     <!-- Header section -->
     <div class="navigation">
@@ -806,11 +806,16 @@
       </div>
     </footer>
     <!-- / Footer section -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
       window.addEventListener("scroll", function () {
         let header = document.querySelector(".navigation");
         header.classList.toggle("sticky", window.scrollY > 0);
      
+      });
+      $(document).mousemove(function (e) {
+        $(".pointer").css({ left: e.pageX, top: e.pageY });
       });
     </script>
   </body>
